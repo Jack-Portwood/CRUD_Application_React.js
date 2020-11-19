@@ -1,4 +1,13 @@
 
+
+.flex-row{
+	display: flex;
+	justify-content: space-around;
+	  
+}
+
+
+
 .btn-muted-btn{
 	margin-bottom: 0 !important;
 	margin-right: .5rem;

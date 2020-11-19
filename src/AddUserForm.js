@@ -6,7 +6,7 @@ const AddUserForm = (props) =>{
 
   //sate for input boxes
   const [user, setUser] = useState(initialFormState);
-  
+
   //handlesInput targets name and value of the object creates new array
   //sets updated object in new array to state
   function handleInputChange(event) {
@@ -23,21 +23,23 @@ const AddUserForm = (props) =>{
         setUser(initialFormState);
       }}
     >
-      <label>Name</label>
-      <input
-        type="text"
-        name="name"
-        value={user.name}
-        onChange={handleInputChange}
-      />
-      <label>Username</label>
-      <input
-        type="text"
-        name="username"
-        value={user.username}
-        onChange={handleInputChange}
-      />
-      <button>Add new user</button>
+      <div className="addForm">
+        <label>Name</label>
+        <input
+          type="text"
+          name="name"
+          value={user.name}
+          onChange={handleInputChange}
+        />
+        <label>Username</label>
+        <input
+          type="text"
+          name="username"
+          value={user.username}
+          onChange={handleInputChange}
+        />
+        <button>Add new user</button>
+      </div>
     </form>
   );
 }
